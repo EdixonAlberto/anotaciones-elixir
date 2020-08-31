@@ -52,7 +52,7 @@ list = [0] ++ list # -> [0, 1, "uno", :uno]
 
 #  LIST - KEY (Lista de claves)
 list = [{:uno, 1}, {:dos, 2}, {:dos, "dos"}] # -> [uno: 1, dos: 3, dos: "dos"]
-list_alias = [:uno, 1, :dos: 2, :dos: "dos"] # -> [uno: 1, dos: 3, dos: "dos"]
+list_alias = [uno, 1, dos: 2, dos: "dos"] # -> [uno: 1, dos: 3, dos: "dos"]
 
 Keyword.get_values(list, :dos) # -> [2, "dos"]
 
